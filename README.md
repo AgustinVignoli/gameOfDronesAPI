@@ -23,6 +23,8 @@ And then
 npm start
 ```
 
+(Or double click on install.bat and start.bat if you are a Windows user)
+
 ## Folder structure
 
 ```
