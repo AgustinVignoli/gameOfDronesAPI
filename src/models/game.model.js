@@ -1,7 +1,4 @@
-import mongoose from 'mongoose';
-import { USER, SERVER, DB, PASSWORD } from '../constants';
-
-mongoose.connect(`mongodb://${USER}:${PASSWORD}@${SERVER}/${DB}`);
+import mongoose from '../dbConnection';
 
 const gameSchema = new mongoose.Schema({
   looser: String,

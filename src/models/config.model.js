@@ -1,7 +1,4 @@
-import mongoose from 'mongoose';
-import { USER, SERVER, DB, PASSWORD } from '../constants';
-
-mongoose.connect(`mongodb://${USER}:${PASSWORD}@${SERVER}/${DB}`);
+import mongoose from '../dbConnection';
 
 const configSchema = new mongoose.Schema({ moves: [{ move: String, kills: String }] });
 
